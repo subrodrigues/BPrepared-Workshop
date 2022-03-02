@@ -9,10 +9,12 @@ namespace DesignPatterns {
         
         void Start() {
             List<Vector3> leaves = GetLeavesPositions();
+            GameObject grpTrees = GameObject.FindWithTag("GrpTrees"); // optional
             
             for (int i = 0; i < 100; i++) {
                 for (int j = 0; j < 100; j++) {
                     Tree tree = Instantiate(treePrefab,  new Vector3(i, 0.5f, j), Quaternion.identity).GetComponent<Tree>();
+                    tree.transform.parent = grpTrees.transform; // optional
                     
                     // List<Vector3> leaves = GetLeavesPositions();
                     tree.Initialize(leaves, "red", 1f);
