@@ -8,15 +8,15 @@ namespace DesignPatterns {
         public List<Tree> trees;
         
         void Start() {
-            List<Vector3> leaves = GetLeavesPositions();
-            GameObject grpTrees = GameObject.FindWithTag("GrpTrees"); // optional
+            // List<Vector3> leaves = GetLeavesPositions();
+            GameObject grpTrees = GameObject.FindWithTag("GrpTrees"); // OPTIONAL
             
             for (int i = 0; i < 100; i++) {
                 for (int j = 0; j < 100; j++) {
                     Tree tree = Instantiate(treePrefab,  new Vector3(i, 0.5f, j), Quaternion.identity).GetComponent<Tree>();
-                    tree.transform.parent = grpTrees.transform; // optional
+                    tree.transform.parent = grpTrees.transform; // OPTIONAL
                     
-                    // List<Vector3> leaves = GetLeavesPositions();
+                    List<Vector3> leaves = GetLeavesPositions();
                     tree.Initialize(leaves, "red", 1f);
 
                     trees.Add(tree);
