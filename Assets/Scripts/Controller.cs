@@ -82,6 +82,9 @@ public class Controller : MonoBehaviour {
 		return acceleration.normalized * accelerationMod;
 	}
 
+	/**
+	 * Handles the mouse input and applies a rotation to the camera.
+	 */
 	private void HandleMouseRotation() {
 		// mouse input
 		var rotationHorizontal = xAxisSensitivity * Input.GetAxis("Mouse X");
