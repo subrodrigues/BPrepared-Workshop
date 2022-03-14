@@ -6,7 +6,7 @@ using UnityEngine;
 public class PingPongBehavior : MonoBehaviour
 {
     private readonly float speed = 0.01f;
-    private readonly float delta = 1f;  //delta is the difference between min y to max y.
+    private readonly float delta = 2f;  //delta is the difference between min y to max y.
     private Vector3 initPos;
     
     private void Start() {
