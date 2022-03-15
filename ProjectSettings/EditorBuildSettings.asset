@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Anisotropic.unity
     guid: 7adbdad239b75684c9394497cd44b3e8
+  - enabled: 1
+    path: Assets/Scenes/BakedLights.unity
+    guid: c4b7b7659baed9b49be0619011401b21
+  - enabled: 1
+    path: Assets/Scenes/DeferredRendering.unity
+    guid: a8ac9a224747a974bba0b01318bac8f6
+  - enabled: 1
+    path: Assets/Scenes/OcclusionCulling.unity
+    guid: c0607c6458e8bca4eb7d2821d898b2c9
   m_configObjects: {}

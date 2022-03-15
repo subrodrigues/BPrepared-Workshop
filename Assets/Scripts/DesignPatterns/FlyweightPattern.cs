@@ -8,7 +8,6 @@ namespace DesignPatterns {
         public List<Tree> trees;
         
         void Start() {
-            // List<Vector3> leaves = GetLeavesPositions();
             GameObject grpTrees = GameObject.FindWithTag("GrpTrees"); // OPTIONAL
             
             for (int i = 0; i < 100; i++) {
@@ -27,7 +26,7 @@ namespace DesignPatterns {
         private List<Vector3> GetLeavesPositions() {
             List<Vector3> positions = new List<Vector3>();
             
-            for (int i = 0; i < 10000; i++) {
+            for (int i = 0; i < 5000; i++) {
                 positions.Add(new Vector3(Random.Range(-0.4f, 0.4f), 1.5f + Random.Range(-0.4f, 0.4f), Random.Range(-0.4f, 0.4f)));
             }
 
